@@ -1,8 +1,24 @@
 aid: baba
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baba.png
 name: Baba
-description: 'Baba is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Baba Care, Inc. is a healthcare company that provides patient advocacy and care-navigation
+  services for Medicare beneficiaries in the United States. Operating under the tagline "Healthcare
+  simplified," Baba pairs each member with a dedicated advocate who handles their healthcare headaches —
+  coordinating care, benefits, and administrative tasks — with the service covered by Medicare. The member
+  experience is delivered through a login-gated web application at baba.care; the company publishes no
+  public developer or API surface at this time. This profile was surfaced as a portfolio company of
+  General Catalyst and added to the API Evangelist network for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/baba/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +28,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Medicare
+- Patient Advocacy
+- Care Navigation
+- Health Insurance
+- Digital Health
 apis: []
+common:
+- type: DomainSecurity
+  url: security/baba-domain-security.yml
+- type: Website
+  url: https://baba.care/
+- type: TermsOfService
+  url: https://baba.care/terms
+- type: PrivacyPolicy
+  url: https://baba.care/privacy
+- type: Login
+  url: https://baba.care/
+- type: Support
+  url: mailto:help@callbaba.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
